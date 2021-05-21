@@ -7,6 +7,7 @@ import { fetchProductsWithId, fetchTypes } from "../http/productApi";
 import { Spinner } from "react-bootstrap"
 import { observer } from "mobx-react-lite";
 
+
 const DrinksPage = observer(() => {
   const {product} = useContext(Context);
   const [loading, setLoading] = useState(true);
