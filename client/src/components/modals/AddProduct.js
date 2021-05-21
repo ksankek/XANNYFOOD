@@ -75,7 +75,7 @@ const AddProduct = observer(({show, onHide}) => {
           type="number"
           className="mt-2"
           value={weight}
-          onChange={e => setWeight(Number(e.target.value))}
+          onChange={e => setWeight(Number(e.target.value.substring(0,3)))}
         />
         <Form.Control 
           placeholder="Structure"
@@ -89,7 +89,7 @@ const AddProduct = observer(({show, onHide}) => {
           type="number"
           className="mt-2"
           value={price}
-          onChange={e => setPrice(Number(e.target.value))}
+          onChange={e => setPrice(Number(e.target.value.substring(0,4)))}
         />
         {/* <Form.Control 
           placeholder="Sale(null)"
