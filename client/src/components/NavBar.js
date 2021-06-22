@@ -24,7 +24,7 @@ const NavBar = observer(() => {
 
   return (
   <div className="NavBar">
-    <img src={logo} alt="logo"/>
+    <img src={logo} style={{cursor:"pointer"}} alt="logo" onClick={() => history.push(MAIN_ROUTE)}/>
     <ul>
       {
         path === MAIN_ROUTE ?

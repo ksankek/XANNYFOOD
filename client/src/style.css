@@ -466,6 +466,11 @@
 }
 
 /*Admin*/
+.scroll{
+  height: 200px;
+  overflow-y: scroll;
+}
+
 .admin{
   margin-top: 50px;
   height: 625px;

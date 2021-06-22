@@ -34,7 +34,6 @@ const AddProduct = observer(({show, onHide}) => {
     .catch((data) => console.log(formData));
   }
 
-  // const
   return (
     <div className="AddProduct">
       <Modal

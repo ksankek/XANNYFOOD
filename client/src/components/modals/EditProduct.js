@@ -53,7 +53,7 @@ const EditProduct = observer(({show, onHide}) => {
       <Form>
         <Dropdown drop="right">
           <Dropdown.Toggle>{product.selectedProduct.name || "Select a product"}</Dropdown.Toggle>
-          <Dropdown.Menu>
+          <Dropdown.Menu className="scroll">
             {product.products.map(prod =>
               <Dropdown.Item
                   onClick={() => {
@@ -116,7 +116,7 @@ const EditProduct = observer(({show, onHide}) => {
           type="number"
           className="mt-2"
           value={price}
-          onChange={e => setPrice(Number(e.target.value))}
+          onChange={e => setPrice(Number(e.target.value.substring(0,4)))}
         />
         {/* <Form.Control 
           placeholder="Sale(null)"

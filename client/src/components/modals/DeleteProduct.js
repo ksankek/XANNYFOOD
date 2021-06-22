@@ -34,7 +34,7 @@ const DeleteProduct = observer(({show, onHide}) => {
       <Form>
       <Dropdown drop="right">
         <Dropdown.Toggle>{product.selectedProduct.name || "Select a product"}</Dropdown.Toggle>
-          <Dropdown.Menu>
+          <Dropdown.Menu className="scroll">
             {product.products.map(prod =>
               <Dropdown.Item
                   onClick={() => product.setSelectedProduct(prod)}

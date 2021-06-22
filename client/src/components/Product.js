@@ -16,7 +16,16 @@ const Product = observer(({product}) => {
       <p className="desc-title struct">{product.struct}</p>
       <div className="price-button">
         <h3 className="title price">{product.price}$</h3>
-        <button className="to-cart-button" onClick={() => addToCart(product.id, user.user.id)}>TO CART</button>
+        <button className="to-cart-button" onClick={() => {try{
+          if (user.user.id) {
+            addToCart(product.id, user.user.id);
+          } else {
+            throw new Error("Not authorized");
+          }
+        } catch (e) {
+          alert(e);
+        }}
+        }>TO CART</button>
       </div>
     </div>
   </div>
