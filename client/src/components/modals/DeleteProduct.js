@@ -14,7 +14,7 @@ const DeleteProduct = observer(({show, onHide}) => {
   const delProduct = () => {  
     deleteProduct(product.selectedProduct.id)
     .then(() => onHide())
-    .catch((data) => console.log(formData));
+    .catch((data) => console.log(data));
   }
 
   return (

@@ -17,7 +17,7 @@ const footer = () => {
         <p className="footer-text follow">Follow @ksankek</p>
         <div className="socials">
           <a href="https://vk.com/ksankek" target="_blank" className="vk"><Icon icon={vkWithCircle} className="icon"/></a>
-          <a href="https://t.me/xannyxan" target="_blank" className="vk"><Icon icon={telegramIcon} className="icon"/></a>
+          <a href="https://t.me/ksankek" target="_blank" className="vk"><Icon icon={telegramIcon} className="icon"/></a>
           <a href="https://www.instagram.com/ksankek/" target="_blank" className="inst"><Icon icon={instagramWithCircle} className="icon"/></a>
         </div>
       </div>

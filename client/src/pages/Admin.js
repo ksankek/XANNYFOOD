@@ -14,10 +14,7 @@ const Admin = () => {
   const history = useHistory();
 
   useEffect( () => {
-    user.user.role === "ADMIN" ? 
-    null
-    :
-    history.push(MAIN_ROUTE);
+    return user.user.role === "ADMIN" ? null : history.push(MAIN_ROUTE);
   }, []);
 
   return (
