@@ -11,7 +11,7 @@ const BasketProduct = ({product}) => {
   <div className="basket-product">
     <div className="basket-description">
       <h1 className="title">{product.name}</h1>
-      <p className="basket-price">Price: {product.price}$</p>
+      <p className="basket-price">Цена: {product.price}$</p>
     </div>
     <button className="del-button" onClick={() => {
       basket.deleteFromCart(product, user.user.id);

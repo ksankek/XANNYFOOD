@@ -19,10 +19,10 @@ const Admin = () => {
 
   return (
   <div className="admin">
-    <h1 className="title">Products</h1>
-    <button className="product-btn" onClick={() => setAddVisible(true)}>Add</button>
-    <button className="product-btn" onClick={() => setEditVisible(true)}>Edit</button>
-    <button className="product-btn" onClick={() => setDeleteVisible(true)}>Delete</button>
+    <h1 className="title">Продукты</h1>
+    <button className="product-btn" onClick={() => setAddVisible(true)}>Добавить</button>
+    <button className="product-btn" onClick={() => setEditVisible(true)}>Изменить</button>
+    <button className="product-btn" onClick={() => setDeleteVisible(true)}>Удалить</button>
     <AddProduct show={addVisible} onHide={() => setAddVisible(false)}/>
     <EditProduct show={editVisible} onHide={() => setEditVisible(false)}/>
     <DeleteProduct show={deleteVisible} onHide={() => setDeleteVisible(false)}/>

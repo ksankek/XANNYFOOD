@@ -14,7 +14,7 @@ const footer = () => {
         <p className="footer-text copyright">© 2021 «XANNYFOOD»</p>
       </div>
       <div className="right-section">
-        <p className="footer-text follow">Follow @ksankek</p>
+        <p className="footer-text follow">Подпишись @ksankek</p>
         <div className="socials">
           <a href="https://vk.com/ksankek" target="_blank" className="vk"><Icon icon={vkWithCircle} className="icon"/></a>
           <a href="https://t.me/ksankek" target="_blank" className="vk"><Icon icon={telegramIcon} className="icon"/></a>

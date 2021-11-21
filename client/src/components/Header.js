@@ -9,11 +9,11 @@ import slide3 from "../assets/image/slider3.png";
 const Header = () => {
   return (
       <div className="header-wrapper">
-      <a href={SHOP_ROUTE}><button className="big-button"><span>SHOP</span> NOW</button></a>
+      <a href={SHOP_ROUTE}><button className="big-button"><span>Начать</span> покупки</button></a>
       <div className="header-title">
-        <h1>Your hunger is our problem</h1>
-        <p>Fastest delivery you could see. 
-        Fresh fruits, finest meats and juiciest drinks</p>
+        <h1>Твой голод - наша проблема</h1>
+        <p>Самая быстрая доставка, которую вы могли видеть.
+        Свежие фрукты, лучшее мясо и самые сочные напитки</p>
       </div>
       <Carousel className="slider" 
       autoPlay={true} 

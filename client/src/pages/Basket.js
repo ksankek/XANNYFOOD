@@ -20,10 +20,10 @@ const Basket = observer(() => {
           {basket.viewBasket.map(product => 
           <BasketProduct key={product.id} product={product}/>
           )}
-          <button className="big-button" onClick={ () => {alert(`Total cost = ${basket.totalCost}`); basket.makeOrder(); deleteAll()}}>PAY IT</button>
+          <button className="big-button" onClick={ () => {alert(`Total cost = ${basket.totalCost}`); basket.makeOrder(); deleteAll()}}>Оплатить</button>
         </div>
         :
-        <h1 className="title null-basket">Cart is empty</h1>
+        <h1 className="title null-basket">Корзина пуста</h1>
       }
     </div>
   );

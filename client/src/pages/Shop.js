@@ -9,19 +9,19 @@ const Shop = observer(() => {
 
   return (
     <div className="shop">
-      <h1 className="title">SHOP</h1>
+      <h1 className="title">МАГАЗИН</h1>
       <div className="categories">
         <a style={{cursor:"pointer"}} onClick={() => history.push(PIZZA_ROUTE)}><div className="category category-pizza">
-          <h1 className="category-title">Pizza</h1>
+          <h1 className="category-title">Пицца</h1>
         </div></a>
         <a style={{cursor:"pointer"}} onClick={() => history.push(SALADS_ROUTE)}><div className="category category-salad">
-          <h1 className="category-title">Salads</h1>
+          <h1 className="category-title">Салаты</h1>
         </div></a>
         <a style={{cursor:"pointer"}} onClick={() => history.push(HAMBURGERS_ROUTE)}><div className="category category-burgers">
-          <h1 className="category-title">Burgers</h1>
+          <h1 className="category-title">Бургеры</h1>
         </div></a>
         <a style={{cursor:"pointer"}} onClick={() => history.push(DRINKS_ROUTE)}><div className="category category-drinks">
-          <h1 className="category-title">Drinks</h1>  
+          <h1 className="category-title">Напитки</h1>  
         </div></a>
       </div>
     </div>

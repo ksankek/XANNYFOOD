@@ -27,13 +27,13 @@ const DeleteProduct = observer(({show, onHide}) => {
   >
     <Modal.Header closeButton>
       <Modal.Title id="contained-modal-title-vcenter">
-        Delete product
+        Удалить продукт
       </Modal.Title>
     </Modal.Header>
     <Modal.Body>
       <Form>
       <Dropdown drop="right">
-        <Dropdown.Toggle>{product.selectedProduct.name || "Select a product"}</Dropdown.Toggle>
+        <Dropdown.Toggle>{product.selectedProduct.name || "Выбрать продукт"}</Dropdown.Toggle>
           <Dropdown.Menu className="scroll">
             {product.products.map(prod =>
               <Dropdown.Item
@@ -48,8 +48,8 @@ const DeleteProduct = observer(({show, onHide}) => {
       </Form>
     </Modal.Body>
     <Modal.Footer>
-      <Button variant="outline-danger" onClick={onHide}>Close</Button>
-      <Button variant="outline-success" onClick={delProduct}>Delete</Button>
+      <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
+      <Button variant="outline-success" onClick={delProduct}>Удалить</Button>
     </Modal.Footer>
   </Modal>
   </div>

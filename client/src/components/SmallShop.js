@@ -5,9 +5,9 @@ const smallShop = () => {
   return (
     <div className="small-shop">
       <div className="items-wrapper">
-        <h1 className="title">SHOP</h1>
+        <h1 className="title">Магазин</h1>
         <div className="types Pizza">
-          <h1 className="title-type">Pizza</h1>
+          <h1 className="title-type">Пицца</h1>
           <div className="items">
             <div className="item pizza1">
               <h3 className="Name">"Pepperoni"</h3>
@@ -24,7 +24,7 @@ const smallShop = () => {
           </div>
         </div>
         <div className="types Salads">       
-          <h1 className="title-type">Salads</h1>
+          <h1 className="title-type">Салаты</h1>
           <div className="items">
             <div className="item salad1">
               <h3 className="Name">"Green"</h3>
@@ -41,7 +41,7 @@ const smallShop = () => {
           </div>
         </div>
         <div className="types Hamburgers">
-          <h1 className="title-type">Hamburgers</h1>
+          <h1 className="title-type">Гамбургеры</h1>
           <div className="items">
             <div className="item burg1">
               <h3 className="Name">"Salad 2X"</h3>
@@ -58,7 +58,7 @@ const smallShop = () => {
           </div>
         </div>
         <div className="types Drinks">
-          <h1 className="title-type">Drinks</h1>
+          <h1 className="title-type">Напитки</h1>
           <div className="items">
             <div className="item drink1">
               <h3 className="Name">"Coca-cola"</h3>
@@ -74,7 +74,7 @@ const smallShop = () => {
             </div>
           </div>
         </div>
-        <a href={SHOP_ROUTE} className="btn"><button className="big-button">GO TO <span>SHOP</span></button></a>
+        <a href={SHOP_ROUTE} className="btn"><button className="big-button">Перейти в <span>магазин</span></button></a>
       </div>
     </div>
   );

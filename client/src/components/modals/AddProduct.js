@@ -44,13 +44,13 @@ const AddProduct = observer(({show, onHide}) => {
       >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Add product
+          Добавить продукт
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
       <Form>
         <Dropdown drop="up">
-          <Dropdown.Toggle>{product.selectedType.name || "Select a type"}</Dropdown.Toggle>
+          <Dropdown.Toggle>{product.selectedType.name || "Выбрать тип"}</Dropdown.Toggle>
           <Dropdown.Menu>
             {product.types.map(type =>
               <Dropdown.Item
@@ -63,28 +63,28 @@ const AddProduct = observer(({show, onHide}) => {
           </Dropdown.Menu>
         </Dropdown>
         <Form.Control 
-          placeholder="Title"
+          placeholder="Название"
           className="mt-2"
           value={name}
           onChange={e => setName(e.target.value.substring(0,12))}
         />
-        <Form.Label className="mt-2">Weight</Form.Label>
+        <Form.Label className="mt-2">Вес</Form.Label>
         <Form.Control 
-          placeholder="Weight"
+          placeholder="Вес"
           type="number"
           className="mt-2"
           value={weight}
           onChange={e => setWeight(Number(e.target.value.substring(0,3)))}
         />
         <Form.Control 
-          placeholder="Structure"
+          placeholder="Структура"
           className="mt-2"
           value={structure}
           onChange={e => setStructure(e.target.value.substring(0,95))}
         />
-        <Form.Label className="mt-2">Price</Form.Label>
+        <Form.Label className="mt-2">Цена</Form.Label>
         <Form.Control 
-          placeholder="Price"
+          placeholder="Цена"
           type="number"
           className="mt-2"
           value={price}
@@ -105,7 +105,7 @@ const AddProduct = observer(({show, onHide}) => {
         /> */}
         <Form.File 
           id="custom-file"
-          label="Input a image"
+          label="Вставьте картинку"
           custom
           accept="image/*"
           className="mt-2"
@@ -114,8 +114,8 @@ const AddProduct = observer(({show, onHide}) => {
       </Form>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="outline-danger" onClick={onHide}>Close</Button>
-        <Button variant="outline-success" onClick={addProduct}>Add</Button>
+        <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
+        <Button variant="outline-success" onClick={addProduct}>Добавить</Button>
       </Modal.Footer>
     </Modal>
     </div>

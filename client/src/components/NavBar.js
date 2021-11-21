@@ -28,31 +28,31 @@ const NavBar = observer(() => {
     <ul>
       {
         path === MAIN_ROUTE ?
-        <li className="selected"><a style={{cursor:"pointer"}} onClick={() => scr.scrollToTop()}>HOME</a></li>
+        <li className="selected"><a style={{cursor:"pointer"}} onClick={() => scr.scrollToTop()}>ГЛАВНАЯ</a></li>
         :
-        <li><a href="" style={{cursor:"pointer"}} onClick={() => history.push(MAIN_ROUTE)}>HOME</a></li>
+        <li><a href="" style={{cursor:"pointer"}} onClick={() => history.push(MAIN_ROUTE)}>ГЛАВНАЯ</a></li>
       }
-      <li><a href="#" onClick={() => scr.scrollTo(660)}>ABOUT US</a></li>
+      <li><a href="#" onClick={() => scr.scrollTo(660)}>О НАС</a></li>
       {
         path === SHOP_ROUTE || path === PIZZA_ROUTE || path === SALADS_ROUTE || path === HAMBURGERS_ROUTE || path === DRINKS_ROUTE ?
-        <li className="selected"><a style={{cursor:"pointer"}} onClick={() => history.push(SHOP_ROUTE)}>SHOP</a></li>
+        <li className="selected"><a style={{cursor:"pointer"}} onClick={() => history.push(SHOP_ROUTE)}>МАГАЗИН</a></li>
         :
-        <li><a href="" style={{cursor:"pointer"}} onClick={() => history.push(SHOP_ROUTE)}>SHOP</a></li>
+        <li><a href="" style={{cursor:"pointer"}} onClick={() => history.push(SHOP_ROUTE)}>МАГАЗИН</a></li>
       }
-      <li><a href="#" onClick={() => scr.scrollToBottom()}>CONTACT</a></li>
+      <li><a href="#" onClick={() => scr.scrollToBottom()}>КОНТАКТЫ</a></li>
   </ul>
   {user.isAuth ? 
   <div className="auth-wrapper">
     <div className="auth">
-      <a href="" style={{cursor:"pointer"}} onClick={() => logOut()}>LOG OUT</a>
+      <a href="" style={{cursor:"pointer"}} onClick={() => logOut()}>ВЫЙТИ</a>
     </div>
     <div className="cart">
     {
       path === BASKET_ROUTE ?
-      <a className="selected" href={BASKET_ROUTE}>CART
+      <a className="selected" href={BASKET_ROUTE}>КОРЗИНА
       <Icon className="selected cartIcon" icon={shoppingBasket2Line} /></a>
       :
-      <a href={BASKET_ROUTE}>CART
+      <a href={BASKET_ROUTE}>КОРЗИНА
       <Icon className="cartIcon" icon={shoppingBasket2Line} /></a>
     }  
   </div>
@@ -62,9 +62,9 @@ const NavBar = observer(() => {
     <div className="auth">
       <div style={{visibility:"visible"}} className="login">
         <a onClick={() => history.push(LOGIN_ROUTE)}><Icon className="accountIcon" icon={roundAccountCircle} />
-        <input className="authButton" type="button" value="LOG IN"/></a>
+        <input className="authButton" type="button" value="ВОЙТИ"/></a>
       </div>
-      <a href="" style={{cursor:"pointer"}} onClick={() => history.push(REGISTRATION_ROUTE)}>SIGN IN</a> 
+      <a href="" style={{cursor:"pointer"}} onClick={() => history.push(REGISTRATION_ROUTE)}>РЕГИСТРАЦИЯ</a> 
     </div>
   </div>  
   }

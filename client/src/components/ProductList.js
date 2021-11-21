@@ -24,7 +24,7 @@ const ProductList = () => {
       path === DRINKS_ROUTE ?
       <DrinksPage/>
       :
-      <h1 className="title">Not found</h1>
+      <h1 className="title">Не найдено</h1>
     }
   </div>
   );

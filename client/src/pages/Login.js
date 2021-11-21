@@ -24,12 +24,12 @@ const Login = observer(() => {
   }  
   return (
     <div className="auth-page">
-      <h1 className="title">LOG IN</h1>
-      <input type="text" placeholder="Input your login" value={email} onChange={e => setEmail(e.target.value.substring(0, 27))}/>
-      <input type="password" placeholder="Input your password" value={password} onChange={e => setPassword(e.target.value.substring(0, 16))}/>
+      <h1 className="title">Вход</h1>
+      <input type="text" placeholder="Введите ваш логин" value={email} onChange={e => setEmail(e.target.value.substring(0, 27))}/>
+      <input type="password" placeholder="Введите ваш пароль" value={password} onChange={e => setPassword(e.target.value.substring(0, 16))}/>
       <div className="buttons">
-        <p>Not account? <a style={{color:"#f39930", cursor:"pointer"}} onClick={() => history.push(REGISTRATION_ROUTE)}>Register!</a></p>
-        <button onClick={logIn} className="big-button">LOG IN</button>
+        <p>Нет аккаунта? <a style={{color:"#f39930", cursor:"pointer"}} onClick={() => history.push(REGISTRATION_ROUTE)}>Зарегистрируйтесь!</a></p>
+        <button onClick={logIn} className="big-button">Войти</button>
       </div>
     </div>
   )

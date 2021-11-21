@@ -28,7 +28,7 @@ const PizzaPage = observer(() => {
 
   return (
   <div className="product-list pizza-page">
-    <h1 className="title">Pizza</h1>
+    <h1 className="title">Пицца</h1>
     <div className="search-wrapper">
       <Icon className="search-icon" icon={searchIcon} />
       <input className="search-bar" type="text" onChange={(event) => setSearchItem(event.target.value)}/>
@@ -39,7 +39,7 @@ const PizzaPage = observer(() => {
           <Product key={product.id} product={product}/>
       )
       :
-      <h1 className="title">No products found</h1>
+      <h1 className="title">Продуктов не найдено</h1>
       }
     </div>
   </div>

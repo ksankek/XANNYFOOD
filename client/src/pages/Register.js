@@ -27,12 +27,12 @@ const Register = observer(() => {
   
   return (
     <div className="auth-page">
-      <h1 className="title">SIGN IN</h1>
-      <input type="text" placeholder="Input your login" value={email} onChange={e => setEmail(e.target.value.substring(0, 27))}/>
-      <input type="password" placeholder="Input your password" value={password} onChange={e => setPassword(e.target.value.substring(0, 16))}/>
+      <h1 className="title">Регистрация</h1>
+      <input type="text" placeholder="Введите ваш логин" value={email} onChange={e => setEmail(e.target.value.substring(0, 27))}/>
+      <input type="password" placeholder="Введите ваш пароль" value={password} onChange={e => setPassword(e.target.value.substring(0, 16))}/>
       <div className="buttons">
-        <p>Have account? <a style={{color:"#f39930", cursor:"pointer"}} onClick={() => history.push(LOGIN_ROUTE)}>Login!</a></p>
-        <button onClick={signIn} className="big-button">SIGN IN</button>
+        <p>Есть аккаунт? <a style={{color:"#f39930", cursor:"pointer"}} onClick={() => history.push(LOGIN_ROUTE)}>Войдите!</a></p>
+        <button onClick={signIn} className="big-button">Зарегистрироваться</button>
       </div>
     </div>
   )
